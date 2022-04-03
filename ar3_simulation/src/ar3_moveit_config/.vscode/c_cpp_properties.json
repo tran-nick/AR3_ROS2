@@ -1,0 +1,53 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/nhtran/ws_moveit2/install/warehouse_ros_mongo/include/**",
+        "/home/nhtran/ws_moveit2/install/moveit_servo/include/**",
+        "/home/nhtran/ws_moveit2/install/moveit_ros_visualization/include/**",
+        "/home/nhtran/ws_moveit2/install/moveit_ros_planning_interface/include/**",
+        "/home/nhtran/ws_moveit2/install/moveit_ros_benchmarks/include/**",
+        "/home/nhtran/ws_moveit2/install/moveit_ros_warehouse/include/**",
+        "/home/nhtran/ws_moveit2/install/warehouse_ros/include/**",
+        "/home/nhtran/ws_moveit2/install/velocity_controllers/include/**",
+        "/home/nhtran/ws_moveit2/install/transmission_interface/include/**",
+        "/home/nhtran/ws_moveit2/install/moveit_simple_controller_manager/include/**",
+        "/home/nhtran/ws_moveit2/install/moveit_ros_robot_interaction/include/**",
+        "/home/nhtran/ws_moveit2/install/moveit_ros_perception/include/**",
+        "/home/nhtran/ws_moveit2/install/moveit_ros_move_group/include/**",
+        "/home/nhtran/ws_moveit2/install/moveit_planners_ompl/include/**",
+        "/home/nhtran/ws_moveit2/install/moveit_ros_planning/include/**",
+        "/home/nhtran/ws_moveit2/install/moveit_ros_occupancy_map_monitor/include/**",
+        "/home/nhtran/ws_moveit2/install/moveit_kinematics/include/**",
+        "/home/nhtran/ws_moveit2/install/moveit_core/include/**",
+        "/home/nhtran/ws_moveit2/install/srdfdom/include/**",
+        "/home/nhtran/ws_moveit2/install/rviz_visual_tools/include/**",
+        "/home/nhtran/ws_moveit2/install/ros2_control_test_assets/include/**",
+        "/home/nhtran/ws_moveit2/install/position_controllers/include/**",
+        "/home/nhtran/ws_moveit2/install/moveit_msgs/include/**",
+        "/home/nhtran/ws_moveit2/install/joint_trajectory_controller/include/**",
+        "/home/nhtran/ws_moveit2/install/joint_state_broadcaster/include/**",
+        "/home/nhtran/ws_moveit2/install/imu_sensor_broadcaster/include/**",
+        "/home/nhtran/ws_moveit2/install/gripper_controllers/include/**",
+        "/home/nhtran/ws_moveit2/install/effort_controllers/include/**",
+        "/home/nhtran/ws_moveit2/install/forward_command_controller/include/**",
+        "/home/nhtran/ws_moveit2/install/force_torque_sensor_broadcaster/include/**",
+        "/home/nhtran/ws_moveit2/install/diff_drive_controller/include/**",
+        "/home/nhtran/ws_moveit2/install/controller_manager/include/**",
+        "/home/nhtran/ws_moveit2/install/controller_interface/include/**",
+        "/home/nhtran/ws_moveit2/install/hardware_interface/include/**",
+        "/home/nhtran/ws_moveit2/install/geometric_shapes/include/**",
+        "/home/nhtran/ws_moveit2/install/controller_manager_msgs/include/**",
+        "/home/nhtran/dev_ws/install/turtlesim/include/**",
+        "/opt/ros/foxy/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

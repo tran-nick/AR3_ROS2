@@ -1,0 +1,29 @@
+# This controller yaml is used by ros2_control
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz, 250 Hz approximate max freq for communincation over serial based on other people's experiences.
+
+    ar3_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    # Creates /joint_states topic necessary in ROS
+    joint_state_controller:
+      type: joint_state_controller/JointStateController
+
+ar3_arm_controller:
+  ros__parameters:
+    command_interfaces:
+      - position
+      # Might need to add 'velocity' command interface
+    state_interfaces:
+      - position
+      # [ros2_control_node-5] [ERROR] [1628544997.578343145] [controller_manager]: 
+      # Can't activate controller 'ar3_arm_controller': State interface with key 'ar3_joint1/velocity' does not exist
+      # - velocity 
+    joints:
+      - ar3_joint1
+      - ar3_joint2
+      - ar3_joint3
+      - ar3_joint4
+      - ar3_joint5
+      - ar3_joint6

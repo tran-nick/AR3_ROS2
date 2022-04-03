@@ -1,0 +1,9 @@
+<library path="ar3_hardware_interface">
+  <class name="ar3_hardware_interface/AR3HardwareInterface"
+         type="ar3_hardware_interface::AR3HardwareInterface"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      The AR3 Control minimal robot protocol. This is example for start porting the robot from ROS 1.
+    </description>
+  </class>
+</library>

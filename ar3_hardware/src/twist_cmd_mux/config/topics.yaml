@@ -1,0 +1,7 @@
+twist_cmd_mux:  # this has to match node name, otherwise params not loaded
+  ros__parameters:
+    xbox_cmd_topic: /xbox/delta_twist_cmds
+    wacom_cmd_topic: /wacom/delta_twist_cmds
+    servo_server_topic: /servo_server/delta_twist_cmds
+    queue_size: 10.0
+

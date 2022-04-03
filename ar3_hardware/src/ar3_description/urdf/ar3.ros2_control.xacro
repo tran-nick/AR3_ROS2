@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="ar3_system_multi_interface" params="name prefix">
+
+    <ros2_control name="${name}" type="system">
+      <hardware>
+        <!-- <plugin>fake_components/GenericSystem</plugin> -->
+        <!-- all these params are accessible in our hardware interface plugin we wrote ar3_hardware_interface -->
+        <plugin>ar3_hardware_interface/AR3HardwareInterface</plugin>   
+          <param name="serial_port">/dev/serusb1</param>`
+          <param name="baudrate">115200</param>
+          <param name="encoder_steps_per_deg_ar3_joint1">227.5555555555556</param>
+          <param name="encoder_steps_per_deg_ar3_joint2">284.4444444444444</param>
+          <param name="encoder_steps_per_deg_ar3_joint3">284.4444444444444</param>
+          <param name="encoder_steps_per_deg_ar3_joint4">223.0044444444444</param>
+          <param name="encoder_steps_per_deg_ar3_joint5">56.04224675948152</param>
+          <param name="encoder_steps_per_deg_ar3_joint6">108.0888888888889</param>
+          <!-- Changing offset values changes starting pose in RViz -->
+          <param name="joint_offsets_ar3_joint1">-170.0</param> <!-- Default -170.0-->
+          <param name="joint_offsets_ar3_joint2">-39.6</param> <!-- Default -39.6-->
+          <param name="joint_offsets_ar3_joint3">-90.0</param> <!-- Default 0.0-->
+          <param name="joint_offsets_ar3_joint4">-164.5</param> <!-- Default -164.5-->
+          <param name="joint_offsets_ar3_joint5">-104.5</param> <!-- Default -104.5-->
+          <param name="joint_offsets_ar3_joint6">-148.1</param> <!-- Default -148.1-->
+          <param name="loop_hz">0.1</param>
+          <param name="max_acceleration">0.1</param>   
+          <param name="max_velocity">1.0</param>
+          <param name="use_existing_calibration">"true"</param>
+          <param name="hw_start_duration_sec">2.0</param>
+          <param name="hw_stop_duration_sec">3.0</param>
+      </hardware>
+      <joint name="ar3_joint1">
+        <!-- command interface we write to  -->
+        <command_interface name="position">
+          <param name="min">-1</param>
+          <param name="max">1</param>
+        </command_interface>
+        <command_interface name="velocity">
+          <param name="min">-1</param>
+          <param name="max">1</param>
+        </command_interface>
+        <!-- state interface read and make data accesible about state of system -->
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+        <!-- <param name="start_position">0.0</param> -->
+      </joint>
+
+      <joint name="ar3_joint2">
+        <command_interface name="position">
+          <param name="min">-1</param>
+          <param name="max">1</param>
+        </command_interface>
+        <command_interface name="velocity">
+          <param name="min">-1</param>
+          <param name="max">1</param>
+        </command_interface>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+        <!-- <param name="start_position">-0.785</param> -->
+      </joint>
+
+      <joint name="ar3_joint3">
+        <command_interface name="position">
+          <param name="min">-1</param>
+          <param name="max">1</param>
+        </command_interface>
+        <command_interface name="velocity">
+          <param name="min">-1</param>
+          <param name="max">1</param>
+        </command_interface>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+        <!-- <param name="start_position">0.0</param> -->
+      </joint>
+
+      <joint name="ar3_joint4">
+        <command_interface name="position">
+          <param name="min">-1</param>
+          <param name="max">1</param>
+        </command_interface>
+        <command_interface name="velocity">
+          <param name="min">-1</param>
+          <param name="max">1</param>
+        </command_interface>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+        <!-- <param name="start_position">0.0</param> -->
+      </joint>
+
+      <joint name="ar3_joint5">
+        <command_interface name="position">
+          <param name="min">-1</param>
+          <param name="max">1</param>
+        </command_interface>
+        <command_interface name="velocity">
+          <param name="min">-1</param>
+          <param name="max">1</param>
+        </command_interface>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+        <!-- <param name="start_position">0.0</param> -->
+      </joint>
+
+      <joint name="ar3_joint6">
+        <command_interface name="position">
+          <param name="min">-1</param>
+          <param name="max">1</param>
+        </command_interface>
+        <command_interface name="velocity">
+          <param name="min">-1</param>
+          <param name="max">1</param>
+        </command_interface>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+        <!-- <param name="start_position">0.0</param> -->
+      </joint>
+
+    </ros2_control>
+
+  </xacro:macro>
+
+</robot>

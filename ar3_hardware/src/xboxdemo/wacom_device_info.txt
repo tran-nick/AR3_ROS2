@@ -1,0 +1,28 @@
+67: USB 00.0: 10503 USB Mouse
+  [Created at usb.122]
+  Unique ID: yNup.5IaByb1_hI3
+  Parent ID: hSuP.eX9EDlP2ZX0
+  SysFS ID: /devices/pci0000:00/0000:00:11.0/0000:02:00.0/usb2/2-2/2-2.2/2-2.2:1.0
+  SysFS BusID: 2-2.2:1.0
+  Hardware Class: mouse
+  Model: "Wacom CTL-4100 [Intuos (S)]"
+  Hotplug: USB
+  Vendor: usb 0x056a "Wacom Co., Ltd"
+  Device: usb 0x0374 "CTL-4100 [Intuos (S)]"
+  Revision: "1.11"
+  Serial ID: "0HH00R2036001"
+  Compatible to: int 0x0210 0x0000
+  Driver: "usbhid"
+  Driver Modules: "usbhid"
+  Device File: /dev/input/mice (/dev/input/mouse3)
+  Device Files: /dev/input/mice, /dev/input/mouse3, /dev/input/event5
+  Device Number: char 13:63 (char 13:35)
+  Speed: 12 Mbps
+  Module Alias: "usb:v056Ap0374d0111dc00dsc00dp00ic03isc00ip00in00"
+  Driver Info #0:
+    Buttons: 0
+    Wheels: 0
+    XFree86 Protocol: explorerps/2
+    GPM Protocol: exps2
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #66 (Hub)

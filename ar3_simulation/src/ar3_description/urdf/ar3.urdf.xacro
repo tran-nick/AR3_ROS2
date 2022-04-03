@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<robot name="ar3" xmlns:xacro="http://ros.org/wiki/xacro">
+  <!-- Enable setting arguments from launch file -->
+  
+  <!-- Change use_fake_hardware to false default to load hardware interface plugin -->
+  <!-- <xacro:arg name="use_fake_hardware" default="false" /> -->
+  <!--<xacro:arg name="initial_positions_file" default="$(find ar3_moveit_config)/config/initial_positions.yaml" />-->
+
+  <!-- Import AR3 macro -->
+  <xacro:include filename="$(find ar3_description)/urdf/ar3_macro.urdf.xacro" />
+  
+  <!-- Import AR3 ros2_control description -->
+  <!-- Renamed from position only to just ar3.ros2_control.xacro -->
+ <xacro:include filename="$(find ar3_description)/urdf/ar3.ros2_control.xacro" />
+
+  <!-- Instantiate AR3 robot. Call this xacro macro in your own urdf.xacro to
+       attach accessories to the AR3. -->
+  <xacro:ar3_macro/>
+
+  <xacro:ar3_system_multi_interface name="ar3_multi_interface" prefix=""/>
+  <!-- <xacro:ar3_ros2_control name="AR3FakeSystem" initial_positions_file="$(arg initial_positions_file)"/> -->
+
+
+</robot>

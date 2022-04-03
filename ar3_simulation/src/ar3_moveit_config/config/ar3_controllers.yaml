@@ -1,0 +1,17 @@
+controller_names:
+  # - joint_trajectory_controller
+  - ar3_arm_controller
+
+# joint_trajectory_controller:
+# changed name to more description
+ar3_arm_controller:
+  action_ns: follow_joint_trajectory
+  type: FollowJointTrajectory
+  default: true
+  joints:
+    - ar3_joint1
+    - ar3_joint2
+    - ar3_joint3
+    - ar3_joint4
+    - ar3_joint5
+    - ar3_joint6
